@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+
+</head>
+<body>
+  <div class="heading">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </div>
+  <div class="calculator">
+    <div class="top-wrapper">
+      <div class="pageviews">
+        <p><span id="views"></span> pageviews</p>
+      </div>
+      <div class="price">
+        <p><span id="cost"></span>/ month</p>
+      </div>
+      <input class="slider" id="slider" type="range" min="0" max="4" step="1" value="0">
+      <div class="billing">
+        <label>
+          Monthly Billing
+          
+          <div class="toggle"><input class="checkbox" id ="yearly" type="checkbox"></div>
+          Yearly Billing 
+        </label>
+      </div>
+    </div>
+
+    <div class="wrapper-bottom">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button id="start">Start my trial</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
